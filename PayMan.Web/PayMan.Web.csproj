@@ -5,16 +5,59 @@
     <AspNetCoreHostingModel>InProcess</AspNetCoreHostingModel>
   </PropertyGroup>
 
+  <ItemGroup>
+    <Content Remove="wwwroot\css\site.css" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Include="wwwroot\.sass-cache\1cfa2888d07dd5fe0dca6afe0f2e22a9670042ec\_flex.scssc" />
+    <None Include="wwwroot\.sass-cache\1cfa2888d07dd5fe0dca6afe0f2e22a9670042ec\_miscellaneous.scssc" />
+    <None Include="wwwroot\.sass-cache\4ee7e8037a06cdc1579ceb99f58791ef545945f5\style.scssc" />
+    <None Include="wwwroot\.sass-cache\4ee7e8037a06cdc1579ceb99f58791ef545945f5\_about.scssc" />
+    <None Include="wwwroot\.sass-cache\4ee7e8037a06cdc1579ceb99f58791ef545945f5\_backtotop.scssc" />
+    <None Include="wwwroot\.sass-cache\4ee7e8037a06cdc1579ceb99f58791ef545945f5\_blog.scssc" />
+    <None Include="wwwroot\.sass-cache\4ee7e8037a06cdc1579ceb99f58791ef545945f5\_breadcrumb.scssc" />
+    <None Include="wwwroot\.sass-cache\4ee7e8037a06cdc1579ceb99f58791ef545945f5\_buttons.scssc" />
+    <None Include="wwwroot\.sass-cache\4ee7e8037a06cdc1579ceb99f58791ef545945f5\_cfa.scssc" />
+    <None Include="wwwroot\.sass-cache\4ee7e8037a06cdc1579ceb99f58791ef545945f5\_contact.scssc" />
+    <None Include="wwwroot\.sass-cache\4ee7e8037a06cdc1579ceb99f58791ef545945f5\_cta.scssc" />
+    <None Include="wwwroot\.sass-cache\4ee7e8037a06cdc1579ceb99f58791ef545945f5\_footer.scssc" />
+    <None Include="wwwroot\.sass-cache\4ee7e8037a06cdc1579ceb99f58791ef545945f5\_gallery.scssc" />
+    <None Include="wwwroot\.sass-cache\4ee7e8037a06cdc1579ceb99f58791ef545945f5\_header.scssc" />
+    <None Include="wwwroot\.sass-cache\4ee7e8037a06cdc1579ceb99f58791ef545945f5\_heading.scssc" />
+    <None Include="wwwroot\.sass-cache\4ee7e8037a06cdc1579ceb99f58791ef545945f5\_hero.scssc" />
+    <None Include="wwwroot\.sass-cache\4ee7e8037a06cdc1579ceb99f58791ef545945f5\_newsletter.scssc" />
+    <None Include="wwwroot\.sass-cache\4ee7e8037a06cdc1579ceb99f58791ef545945f5\_portfolio.scssc" />
+    <None Include="wwwroot\.sass-cache\4ee7e8037a06cdc1579ceb99f58791ef545945f5\_preloader.scssc" />
+    <None Include="wwwroot\.sass-cache\4ee7e8037a06cdc1579ceb99f58791ef545945f5\_reboot.scssc" />
+    <None Include="wwwroot\.sass-cache\4ee7e8037a06cdc1579ceb99f58791ef545945f5\_service.scssc" />
+    <None Include="wwwroot\.sass-cache\4ee7e8037a06cdc1579ceb99f58791ef545945f5\_spacing.scssc" />
+    <None Include="wwwroot\.sass-cache\4ee7e8037a06cdc1579ceb99f58791ef545945f5\_team.scssc" />
+    <None Include="wwwroot\.sass-cache\4ee7e8037a06cdc1579ceb99f58791ef545945f5\_testimonial.scssc" />
+    <None Include="wwwroot\.sass-cache\4ee7e8037a06cdc1579ceb99f58791ef545945f5\_widget.scssc" />
+    <None Include="wwwroot\.sass-cache\cd19382841f138ddc9e4f0d627fb767203a61df0\_color.scssc" />
+    <None Include="wwwroot\.sass-cache\cd19382841f138ddc9e4f0d627fb767203a61df0\_fonts.scssc" />
+    <None Include="wwwroot\.sass-cache\cd19382841f138ddc9e4f0d627fb767203a61df0\_responsive.scssc" />
+    <None Include="wwwroot\.sass-cache\cd19382841f138ddc9e4f0d627fb767203a61df0\_variables.scssc" />
+  </ItemGroup>
+
 
   <ItemGroup>
     <PackageReference Include="Microsoft.AspNetCore.App" />
     <PackageReference Include="Microsoft.AspNetCore.Razor.Design" Version="2.2.0" PrivateAssets="All" />
+    <PackageReference Include="Microsoft.VisualStudio.Web.CodeGeneration.Design" Version="2.2.0" />
   </ItemGroup>
 
 
   <ItemGroup>
     <ProjectReference Include="..\PayMan.Data\PayMan.Data.csproj" />
     <ProjectReference Include="..\PayMan.Services\PayMan.Services.csproj" />
+  </ItemGroup>
+
+
+  <ItemGroup>
+    <Folder Include="Areas\User\Models\" />
+    <Folder Include="Areas\Admin\Models\" />
   </ItemGroup>
 
 </Project>
