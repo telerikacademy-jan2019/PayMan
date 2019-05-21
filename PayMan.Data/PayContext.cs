@@ -23,6 +23,8 @@ namespace PayMan.Data
 
         public DbSet<Client> Clients { get; set; }
 
+        public DbSet<Role> Roles { get; set; }
+
         public DbSet<Transaction> Transactions { get; set; }
 
         public DbSet<User> Users { get; set; }

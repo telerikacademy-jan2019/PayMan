@@ -1,5 +1,4 @@
 ﻿using Microsoft.AspNetCore.Hosting;
-using Microsoft.AspNetCore.Identity;
 using Microsoft.Extensions.DependencyInjection;
 using PayMan.Data.Models;
 using System;
@@ -16,22 +15,22 @@ namespace PayMan.Data.Utilities
         {
             using (var scope = host.Services.CreateScope())
             {
-                var dbContext = scope.ServiceProvider.GetRequiredService<PayContext>();
-                if (!dbContext.Roles.Any(x => x.Name == DataConstants.RoleAdmin))
-                {
-                    var roleManager = scope.ServiceProvider.GetRequiredService<RoleManager<IdentityRole>>();
-                    await roleManager.CreateAsync(new IdentityRole { Name = DataConstants.RoleAdmin });
-                    await roleManager.CreateAsync(new IdentityRole { Name = DataConstants.RoleUser });
-                }
+                //var dbContext = scope.ServiceProvider.GetRequiredService<PayContext>();
+                //if (!dbContext.Roles.Any(x => x.Name == DataConstants.RoleAdmin))
+                //{
+                //    var roleManager = scope.ServiceProvider.GetRequiredService<RoleManager<Role>>();
+                //    await roleManager.CreateAsync(new Role { Name = DataConstants.RoleAdmin });
+                //    await roleManager.CreateAsync(new Role { Name = DataConstants.RoleUser });
+                //}
 
-                if (!dbContext.Users.Any(x => x.UserName == DataConstants.UsernameAdmin))
-                {
-                    var userManager = scope.ServiceProvider.GetRequiredService<UserManager<User>>();
+                //if (!dbContext.Users.Any(x => x.UserName == DataConstants.UsernameAdmin))
+                //{
+                //    var userManager = scope.ServiceProvider.GetRequiredService<UserManager<User>>();
 
-                    var adminUser = new User { UserName = DataConstants.UsernameAdmin, Email = DataConstants.EmailAdmin };
-                    await userManager.CreateAsync(adminUser, DataConstants.PasswordAdmin);
-                    await userManager.AddToRoleAsync(adminUser, DataConstants.RoleAdmin);
-                }
+                //    var adminUser = new User { UserName = DataConstants.UsernameAdmin, FullName = DataConstants.FullName };
+                //    await userManager.CreateAsync(adminUser, DataConstants.PasswordAdmin);
+                //    await userManager.AddToRoleAsync(adminUser, DataConstants.RoleAdmin);
+                //}
             }
         }
     }

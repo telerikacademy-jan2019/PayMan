@@ -23,8 +23,10 @@ namespace PayMan.Data.Models
         [StringLength(32)]
         public string Password { get; set; }
 
-        [Required]
-        public string Role { get; set; }
+        [ForeignKey(nameof(Role))]
+        public int RoleId { get; set; }
+
+        public Role Role { get; set; }
 
         public ICollection<UsersAccounts> UsersAccounts { get; set; }
 
