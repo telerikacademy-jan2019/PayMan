@@ -26,9 +26,9 @@ namespace PayMan.Data.Utilities
 
                 if (!dbContext.Users.Any(x => x.UserName == DataConstants.UsernameAdmin))
                 {
-                    var userManager = scope.ServiceProvider.GetRequiredService<UserManager<ApplicationUser>>();
+                    var userManager = scope.ServiceProvider.GetRequiredService<UserManager<User>>();
 
-                    var adminUser = new ApplicationUser { UserName = DataConstants.UsernameAdmin, Email = DataConstants.EmailAdmin };
+                    var adminUser = new User { UserName = DataConstants.UsernameAdmin, Email = DataConstants.EmailAdmin };
                     await userManager.CreateAsync(adminUser, DataConstants.PasswordAdmin);
                     await userManager.AddToRoleAsync(adminUser, DataConstants.RoleAdmin);
                 }

@@ -13,9 +13,12 @@ namespace PayMan.Data.Models
         [Required]
         public string Description { get; set; }
 
+        [RegularExpression(@"^\d+.?\d{0,2}$")]
         public decimal Amount { get; set; }
 
         public DateTime TimeStamp { get; set; }
+
+        public bool IsSent { get; set; }
 
         public int SenderAccountId { get; set; }
 

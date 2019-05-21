@@ -3,13 +3,13 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
 VisualStudioVersion = 15.0.28307.421
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PayMan.Web", "PayMan.Web\PayMan.Web.csproj", "{9F5750CA-AA42-4197-A283-6ABF0960C54D}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "PayMan.Data", "PayMan.Data\PayMan.Data.csproj", "{334C8B95-EC42-4BA0-AF7B-0B653164DBCE}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PayMan.Data", "PayMan.Data\PayMan.Data.csproj", "{334C8B95-EC42-4BA0-AF7B-0B653164DBCE}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "PayMan.Services", "PayMan.Services\PayMan.Services.csproj", "{7E2EE608-299C-4B9F-94C1-919AAF79E111}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PayMan.Services", "PayMan.Services\PayMan.Services.csproj", "{7E2EE608-299C-4B9F-94C1-919AAF79E111}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "PayMan.Tests", "PayMan.Tests\PayMan.Tests.csproj", "{157CC306-0D21-4E07-9C9F-F2F4E6158A79}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PayMan.Tests", "PayMan.Tests\PayMan.Tests.csproj", "{157CC306-0D21-4E07-9C9F-F2F4E6158A79}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PayMan.Web", "PayMan.Web\PayMan.Web.csproj", "{10FB23B7-FC42-4533-9D39-BAF55245F1F6}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -17,10 +17,6 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{9F5750CA-AA42-4197-A283-6ABF0960C54D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{9F5750CA-AA42-4197-A283-6ABF0960C54D}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{9F5750CA-AA42-4197-A283-6ABF0960C54D}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{9F5750CA-AA42-4197-A283-6ABF0960C54D}.Release|Any CPU.Build.0 = Release|Any CPU
 		{334C8B95-EC42-4BA0-AF7B-0B653164DBCE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{334C8B95-EC42-4BA0-AF7B-0B653164DBCE}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{334C8B95-EC42-4BA0-AF7B-0B653164DBCE}.Release|Any CPU.ActiveCfg = Release|Any CPU
@@ -33,6 +29,10 @@ Global
 		{157CC306-0D21-4E07-9C9F-F2F4E6158A79}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{157CC306-0D21-4E07-9C9F-F2F4E6158A79}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{157CC306-0D21-4E07-9C9F-F2F4E6158A79}.Release|Any CPU.Build.0 = Release|Any CPU
+		{10FB23B7-FC42-4533-9D39-BAF55245F1F6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{10FB23B7-FC42-4533-9D39-BAF55245F1F6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{10FB23B7-FC42-4533-9D39-BAF55245F1F6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{10FB23B7-FC42-4533-9D39-BAF55245F1F6}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

@@ -16,6 +16,6 @@ namespace PayMan.Data.Models
 
         public ICollection<Account> Accounts { get; set; }
 
-        public ICollection<ApplicationUser> Users { get; set; }
+        public ICollection<UsersClients> UsersClients { get; set; }
     }
 }

@@ -12,12 +12,14 @@ namespace PayMan.Data.Models
         public int AccountId { get; set; }
 
         [Required]
-        [RegularExpression(@"(.{10})")]
+        [StringLength(10, MinimumLength = 10)]
         public string AccountNumber { get; set; }
 
         [Required]
         public string Nickname { get; set; }
 
+        [Range(0, Double.MaxValue)]
+        [RegularExpression(@"^\d+.?\d{0,2}$")]
         public decimal Balance { get; set; }
 
         [ForeignKey(nameof(Client))]
